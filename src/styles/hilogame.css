@@ -1,0 +1,185 @@
+.hilo-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0e0f12, #151a24);
+  color: #f1f3f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.hilo-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #1a1d27;
+  border-bottom: 1px solid #2b2f3b;
+}
+
+.navbar-left {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fc5c65;
+}
+
+.navbar-center {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #1a1d27;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #eaecef;
+  border: 1px solid #2b2f3b;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  background: transparent;
+  color: #fc5c65;
+  border: 1px solid #fc5c65;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.back-button:hover {
+  background: #fc5c65;
+  color: white;
+}
+
+/* Toast */
+.toast {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  background-color: #2d2f36;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  z-index: 10;
+  opacity: 0.95;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Game Layout */
+.game-body {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card Container */
+.card-container {
+  position: relative;
+  text-align: center;
+}
+
+.game-card {
+  width: 180px;
+  max-width: 80vw;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Skip Button */
+.skip-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #fc5c65;
+  color: white;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.skip-button:hover {
+  background-color: #ff7676;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.guess-button {
+  background-color: #252b36;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.guess-button:hover {
+  background-color: #fc5c65;
+}
+
+/* Betting Section */
+.betting-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 90%;
+  max-width: 350px;
+}
+
+.betting-section input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1c1f26;
+  color: white;
+  outline: none;
+}
+
+.start-button,
+.cashout-button {
+  width: 100%;
+  background-color: #fc5c65;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.start-button:hover,
+.cashout-button:hover {
+  background-color: #ff7676;
+}
+
+/* Multiplier Display */
+.multiplier-display {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #e4e6ea;
+}
